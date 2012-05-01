@@ -1,0 +1,70 @@
+<section id="the-startup">
+  <%= image_tag "http://www.groupbuddies.com/images/gb_logo300.png", :id => "logo", :size => "50x50" %>
+  <h1 id="name">Group Buddies</h1>
+  <span id="hq">Universidade do Minho, Braga</span>
+  <div id="website">
+    <span>Website:</span>
+    <%= link_to "http://www.groupbuddies.com" %>
+  </div>
+</section>
+
+<aside id="buttons">
+  <%= button_to "Get in Touch", "#" %>
+</aside>
+
+<section id="info">
+  <h2>Info</h2>
+
+  <span>Creation Date:</span> <time id="creation-date">4/4/2012</time>
+
+  <h3>Description</h3>
+  <div id="desc">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+
+  <h3>Partners</h3>
+  <div id="partners">
+    <div itemscope itemtype="http://schema.org/Person" class="partner">
+      <dl>
+        <dt>Name</dt>
+        <dd itemprop="name">Luís Ferreira</dd>
+
+        <dt>Date of Birth</dt>
+        <dd itemprop="birthDate">19/08/1988 (23)</dd>
+
+        <dt>E-mail</dt>
+        <dd itemprop="email">zamith@groupbuddies.com</dd>
+      </dl>
+    </div>
+
+    <div itemscope itemtype="http://schema.org/Person" class="partner">
+      <dl>
+        <dt>Name</dt>
+        <dd itemprop="name">Roberto Machado</dd>
+
+        <dt>Date of Birth</dt>
+        <dd itemprop="birthDate">17/11/1988 (23)</dd>
+
+        <dt>E-mail</dt>
+        <dd itemprop="email">roberto@groupbuddies.com</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="Products">
+  <h2>Products</h2>
+
+  <div itemscope itemType="http://schema.org/CreativeWork" class="product">
+    <dl>
+      <dt>Name</dt>
+      <dd itemprop="name">Handy Ant</dd>
+    
+      <dt>Description</dt>
+      <dd itemprop="description">Handy Ant is very cool</dd>
+    
+      <dt>Website</dt>
+      <dd itemprop="url"><%= link_to "http://www.gaeb.pt/" %></dd>
+    </dl>
+  </div>
+</section>
